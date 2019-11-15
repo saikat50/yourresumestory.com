@@ -9,7 +9,7 @@ get_header();
 
         <div class="layer-content">
             <div class="heding-of-banner">
-                <h2 class="roboto-m breadcum-txt-head text-white">Read Blog</h2>
+                <h2 class="roboto-m breadcum-txt-head text-white">Contact Us</h2>
                 <p class="text-center"><a class="roboto-cn-r font-16 color-main-black" href="">Home</a> <span class="rotate-1" style="font-size: 10px">/</span> <span class="roboto-cn-r font-16 color-main-black">Contact Us</span></p>
             </div>
         </div>
