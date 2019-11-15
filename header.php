@@ -109,20 +109,16 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="index.html">All trips</a></li>
-                                            <li><a href="">Travel styles</a>
+                                            <li><a href="<?php site_url(); ?>/home">Home</a></li>
+                                            <li><a href="">Career Advice</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="">Family fun</a></li>
-                                                    <li><a href="">Adventure</a></li>
-                                                    <li><a href="">Cultural</a></li>
-                                                    <li><a href="">Holiday & Seasonal</a></li>
-                                                    <li><a href="">Book of Mormon Tours</a></li>
+                                                    <li><a href="">Example 1</a></li>
+                                                    <li><a href="">Example 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="">Destinations</a></li>
-                                            <li><a href="">About US</a></li>
-                                            <li><a href="">Blog</a></li>
-                                            <li><a href="">Contact us</a></li>
+                                            <li><a href="">About Me</a></li>
+                                            <li><a href="<?php site_url(); ?>/blog">Blog</a></li>
+                                            <li><a href="<?php site_url(); ?>/contact-us">Contact us</a></li>
                                         </ul>
                                     </nav>
                                 </div>

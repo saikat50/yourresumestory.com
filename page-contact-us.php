@@ -26,7 +26,7 @@ get_header();
                     </div>
                 </div>
 
-                <div class="mt-90 pb-30">
+                <div class="mt-90 pb-30 mob-mt-50">
                     <div class="contact-from max-w-1020">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-lg-6">

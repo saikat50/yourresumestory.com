@@ -459,4 +459,53 @@
         background-size: cover!important;
         position: relative;
     }
+    .breadcum-txt-head {
+        font-size: 42px;
+    }
+    .contact-us h2 {
+        font-family: 'Roboto-b';
+        font-size: 32px;
+        color:
+                #3A3A3A;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contact-us h3 {
+        font-family: 'Roboto-cn-l';
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .mob-mt-50{
+        margin-top: 50px;
+    }
+    .contact-us h3::after {
+        position: absolute;
+        bottom: -23px;
+    }
+    .contact-us input {
+         height: 48px;
+     }
+    .contact-us button {
+        font-family: 'Roboto-cn-b';
+        font-size: 20px;
+    }
+    .breadcum_banner{
+        background-position: center!important;
+    }
+    .breadcum_banner {
+        padding-top: 40px;
+        padding-bottom: 136px;
+    }
+    .contact-info iframe{
+        height: 300px;
+    }
+    .contact-info{
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+    .sticky .logo img{
+        width: 100px;
+    }
+
 }
