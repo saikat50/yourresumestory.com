@@ -17,15 +17,15 @@
 .bg-white{
     background: #fff;
 }
-color-blue{
+.color-blue{
     color: #276F8F;
 }
-
+.color-orange{
+    color: #e99a1e;
+}
 .color-555{
     color: #555555;
 }
-
-
 .first-heading{
     font-size: 52px;
 }
@@ -46,11 +46,12 @@ color-blue{
 }
 
 
-/**************Home Page Banner *********************/
+/************** Home Page Banner *********************/
 .bg-banner{
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     position: relative;
+    background-size: cover !important;
 }
 .layer-content{
     position: absolute;
@@ -103,10 +104,25 @@ color-blue{
 .font-16{
     font-size: 16px;
 }
+.font-15{
+    font-size: 15px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-13{
+    font-size: 13px;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-20{
+    font-size: 16px;
+}
 
 
 .logo img{
-    width: 174px;
+    width: 100px;
 }
 .logo{
     padding: 0;
@@ -199,9 +215,9 @@ color-blue{
 
 
 .footer-bg{
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: cover;
+    background-repeat: no-repeat!important;
+    background-position:  center!important;
+    background-size: cover!important;
     position: relative;
 }
 .footer-layer-1{
@@ -302,14 +318,108 @@ color-blue{
 .mob-view{
     display: none;
 }
+
+/*****************Contact Us Page************/
+
 .breadcum_banner{
     padding-top: 130px;
     padding-bottom: 130px;
 }
+.breadcum_banner .layer-content{
+    background: rgba(61,151,196,.6);
+}
 .breadcum-txt-head{
     font-size: 52px;
 }
+.breadcum_banner .heding-of-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+
+.contact-us .container{
+    background: #F3F3F3;
+}
+.contact-us h2{
+    font-family: 'Roboto-b';
+    font-size: 55px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 30px;
+}
+.contact-us h3{
+    font-family: 'Roboto-cn-l';
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+}
+.contact-us h3:after{
+    position: absolute;
+    bottom: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: #2D2D2D;
+    content: '';
+}
+.contact-us button{
+    font-family: 'Roboto-cn-b';
+    font-size: 30px;
+}
+.contact-us input, .contact-us textarea{
+    border: 0;
+    border-radius: 0;
+}
+.contact-us input{
+    height: 60px;
+}
+.contact-us form .form-control::placeholder {
+    color:#848994;
+    font-family: 'Roboto-r';
+    font-size: 16px;
+    opacity: 1; /* Firefox */
+}
+
+.contact-us form .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#848994;
+    font-family: 'Roboto-r';
+    font-size: 16px;
+}
+
+.contact-us form .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color:#848994;
+    font-family: 'Roboto-r';
+    font-size: 16px;
+}
+.contact-info-box i{
+    font-size: 30px;
+    color: #454545;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.contact-info-box i,.contact-info-box h3, .contact-info-box p{
+    text-align: center;
+}
+.contact-info-box p{
+    font-family: 'Roboto-r';
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact-info-box h3{
+    font-family: 'Roboto-b';
+}
+.contact-info-box{
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+.btn-submit:hover{
+    color: #276F8F!important;
+}
+/***********************Contact Us page Ended*******************/
 
 @media(max-width: 767px){
     

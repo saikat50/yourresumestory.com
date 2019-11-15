@@ -150,8 +150,8 @@ nav#primary-menu {display: inline-block; float: right;}
 .main-menu > li > a {
     color: #383838;
     display: block;
-    font-family: Roboto-cn-b;
-    font-size: 18px;
+    font-family: Roboto-cn-r;
+    font-size: 16px;
     line-height: 24px;
     padding: 38px 33px;
     position: relative;
@@ -302,7 +302,7 @@ ul.dropdown > li:hover > ul.inside-menu {
 .sticky .logo img {
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	width: 160px;
+	width: 92px;
 }
 .sticky .logo {padding: 0px 0;}
 .sticky .login-btn {

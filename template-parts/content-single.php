@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * Template part for displaying posts
@@ -20,7 +22,7 @@
             <?php } ?>
             <p class="date-time"><?php echo get_the_date('d') .'.'. get_the_date('m') .'.'. get_the_date('Y'); ?></p>
             <h3 class="blog-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <div class="blog-text"><?php the_excerpt(); ?></div>
+            <div class="blog-text"><?php the_content(); ?></div>
         </div>
 
         <?php if ( 'post' === get_post_type() ) : ?>

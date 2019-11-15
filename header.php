@@ -54,6 +54,7 @@
     <!-- Responsive CSS
     ============================================ -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/blog.css">
 
     <!-- custom /cscss -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css">
@@ -67,7 +68,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yourresumestory-com' ); ?></a>
+
 
     <!--Main Wrapper Start-->
     <div class="as-mainwrapper">
@@ -77,24 +78,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="logo"><a href="index.html"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo/Almas.png" alt="Almas Expedition"></a></div>
+                        <div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo.PNG" alt="Almas Expedition"></a></div>
                     </div>
                     <div class="col-sm-6 col-lg-9">
                         <nav id="primary-menu">
                             <ul class="main-menu text-right">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="<?php site_url(); ?>/home">Home</a></li>
                                 <li><a href="">Career Advice <i class="fal fa-chevron-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="">Family fun</a></li>
-                                        <li><a href="">Adventure</a></li>
-                                        <li><a href="">Cultural</a></li>
-                                        <li><a href="">Holiday & Seasonal</a></li>
-                                        <li><a href="">Book of Mormon Tours</a></li>
+                                        <li><a href="">Example 1</a></li>
+                                        <li><a href="">Example 2</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="">About Me</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Contact us</a></li>
+                                <li><a href="<?php site_url(); ?>/blog">Blog</a></li>
+                                <li><a href="<?php site_url(); ?>/contact-us">Contact us</a></li>
                             </ul>
                         </nav>
                     </div>
