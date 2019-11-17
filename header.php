@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo3.PNG" alt="Almas Expedition"></a></div>
+                        <div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo3.PNG" alt="Your Resume Story"></a></div>
                     </div>
                     <div class="col-sm-6 col-lg-9">
                         <nav id="primary-menu">
