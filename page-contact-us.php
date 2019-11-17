@@ -28,41 +28,17 @@ get_header();
 
                 <div class="mt-90 pb-30 mob-mt-50">
                     <div class="contact-from max-w-1020">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full name*">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-lg-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email*">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject*">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-block color-head-balck">SUBMIT NOW</button>
-                                </div>
-                            </div>
-                        </div>
-
+                        <?php
+                        if ( have_posts() ) {
+                            while ( have_posts() ) {
+                                the_post();
+                                the_content();
+                                //
+                                // Post Content here
+                                //
+                            } // end while
+                        } // end if
+                        ?>
                     </div>
                 </div>
             </div>

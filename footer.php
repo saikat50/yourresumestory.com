@@ -25,13 +25,13 @@
                         <div class="col-md-4">
                             <h3 class="f-menu-title mont-b mt-10">Menu</h3>
                             <ul>
-                                <li><a href="">Home</a></li>
+                                <li><a href="<?php site_url(); ?>/home/">Home</a></li>
                                 <li><a href="">Career Advice</a></li>
-                                <li><a href="">Blog</a></li>
+                                <li><a href="<?php site_url(); ?>/blog/">Blog</a></li>
                             </ul>
                             <ul class="lastone">
-                                <li><a href="">About Me</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><a href="<?php site_url(); ?>/about-me">About Me</a></li>
+                                <li><a href="<?php site_url(); ?>/contact-us">Contact</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">

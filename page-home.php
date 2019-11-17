@@ -99,7 +99,10 @@ get_header();
                     <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
                 </div>
                 <div class="col-md-7">
-                    <p class="roboto-r color-gray font-16"><?php if(get_field('about_left_content')) the_field('about_left_content'); ?></p>
+                    <p class="roboto-r color-gray font-16">
+                        <?php if(get_field('about_left_content')) the_field('about_left_content'); ?>
+                        <p class="mt-20"><a href="<?php site_url(); ?>/about-me" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
+                    </p>
                 </div>
                 <div class="col-md-5 desk-view">
                     <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
@@ -143,8 +146,8 @@ get_header();
                                         <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                                     </div>
                                     <h3 class="post-headings roboto-m"><?php $title = get_the_title();  echo $title ?></h3>
-                                    <p class="post-time-date roboto-r"><?php the_date('M.d');?>. - <?php the_author(); ?> - <?php comments_number(); ?></p>
-                                    <p class="post-content roboto-r"><?php the_excerpt(); ?></p>
+                                    <p class="post-time-date roboto-r"><?php the_date('M.d');?> - <?php the_author(); ?> - <?php comments_number(); ?></p>
+                                    <p class="post-content roboto-r"><?php echo myTruncate(20); ?></p>
                                 </div>
                             </a>
                         </div>
@@ -157,7 +160,7 @@ get_header();
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="mt-40 text-center"><a href="" class="btn btn-read text-white roboto-r bg-blue">See All Posts</a></p>
+                    <p class="mt-40 text-center"><a href="<?php site_url(); ?>/blog/" class="btn btn-read text-white roboto-r bg-blue">See All Posts</a></p>
                 </div>
             </div>
         </div>
