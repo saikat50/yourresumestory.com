@@ -90,7 +90,7 @@
                                         <li><a href="">Example 2</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="">About Me</a></li>
+                                <li><a href="<?php site_url(); ?>/about-me">About Me</a></li>
                                 <li><a href="<?php site_url(); ?>/blog">Blog</a></li>
                                 <li><a href="<?php site_url(); ?>/contact-us">Contact us</a></li>
                             </ul>

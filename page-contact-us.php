@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<div class="banner pl-0 pr-0 bg-banner breadcum_banner" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/assets/images/bredcum-images.jpg')">
+<div class="banner pl-0 pr-0 bg-banner breadcum_banner" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/assets/images/conatct-us.jpg')">
 
         <div class="layer-content">
             <div class="heding-of-banner">

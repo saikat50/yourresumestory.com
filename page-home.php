@@ -6,13 +6,13 @@
 get_header();
 ?>
 
-    <div class="banner pl-0 pr-0 bg-banner" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/assets/images/resume-banner.jpg')">
+    <div class="banner pl-0 pr-0 bg-banner" style="background: url('<?php if(get_field('banner_background_image')) the_field('banner_background_image'); ?>')">
 
         <div class="layer-content">
             <div class="heding-of-banner">
-                <h1 class="first-heading roboto-cn-b text-white text-center">Over 20 Years of Experience</h1>
-                <h2 class="secound-heading text-white roboto-cn-l text-center">Review your CV and get dream job</h2>
-                <p class="text-center"><a href="" class="btn btn-submit roboto-cn-b text-white bg-orange">Submit Now</a></p>
+                <h1 class="first-heading roboto-cn-b text-white text-center"><?php if(get_field('banner_heading')) the_field('banner_heading'); ?></h1>
+                <h2 class="secound-heading text-white roboto-cn-l text-center"><?php if(get_field('banner_sub_heading')) the_field('banner_sub_heading'); ?></h2>
+                <p class="text-center"><a href="<?php site_url(); ?>/resume-submit/" class="btn btn-submit roboto-cn-b text-white bg-orange">Submit Now</a></p>
             </div>
         </div>
 
@@ -22,22 +22,19 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading mt-20">What hiring manager look for ?</h3>
+                    <h2 class="roboto-b color-main-black text-center secound-heading mt-20"><?php if(get_field('h_manager_h')) the_field('h_manager_h'); ?></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-md-6 mob-view">
-                    <img class="img-fluid mt-30" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/serachIcon.png" alt="">
+                    <img class="img-fluid mt-30" src="<?php if(get_field('right_image')) {$image = get_field('right_image'); echo $image['url'];} ?>" alt="<?php echo $image['alt']; ?>">
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6">
-                    <p class="section-para color-gray roboto-r  mt-30">There are few experiences more humbling (and
-                        sometimes frustrating) than reducing your life’s work and
-                        experience to the few pieces of paper known as cover etter and resume. Furthermore, after boiling down whoyou are to a handful of pages, the person making an organization’s initial hiring decisions will spend on average, 15 seconds perusing your effort before placing you in the “yes”,
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci error excepturi fugit porro quaerat sint tempore, voluptate voluptates.</p>
+                    <p class="section-para color-gray roboto-r  mt-30"><?php if(get_field('left_content')) the_field('left_content'); ?></p>
                     <p class="mt-20"><a href="" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-6 desk-view">
-                    <img class="img-fluid mt-30" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/serachIcon.png" alt="">
+                    <img class="img-fluid mt-30" src="<?php if(get_field('right_image')) {$image = get_field('right_image'); echo $image['url'];} ?>" alt="<?php echo $image['alt']; ?>">
                 </div>
             </div>
         </div>
@@ -47,7 +44,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading">How It Works</h3>
+                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('how_it_works')) the_field('how_it_works'); ?></h3>
                 </div>
             </div>
             <div class="row arrow-line-indicator">
@@ -59,8 +56,8 @@ get_header();
                         <div class="circle-icon">
                             <i class="fal fa-cloud-upload-alt"></i>
                         </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0">Upload Your Resume</p>
-                        <p class="text-center roboto-r color-555 font-16">Any document format</p>
+                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step1_heading')) the_field('step1_heading'); ?></p>
+                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step1_sub_heading')) the_field('step1_sub_heading'); ?></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-lg-4">
@@ -68,8 +65,8 @@ get_header();
                         <div class="circle-icon">
                             <i class="fal fa-file-search"></i>
                         </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0">Reviewed</p>
-                        <p class="text-center roboto-r color-555 font-16">Making correction and notes</p>
+                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step2_heading')) the_field('step2_heading'); ?></p>
+                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step2_sub_heading')) the_field('step2_sub_heading'); ?></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-lg-4">
@@ -77,14 +74,14 @@ get_header();
                         <div class="circle-icon">
                             <i class="fal fa-user-md-chat"></i>
                         </div>
-                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0">Get Advice</p>
-                        <p class="text-center roboto-r color-555 font-16">Follow and get dream job</p>
+                        <p class="text-center roboto-b color-555 mt-25 font-18 mb-0"><?php if(get_field('step3_heading')) the_field('step3_heading'); ?></p>
+                        <p class="text-center roboto-r color-555 font-16"><?php if(get_field('step3_sub_heading')) the_field('step3_sub_heading'); ?></p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-center"><a href="" class="btn btn-submit roboto-cn-b color-blue bg-white mt-30">Submit Now</a></p>
+                    <p class="text-center"><a href="<?php site_url(); ?>/resume-submit/" class="btn btn-submit roboto-cn-b color-blue bg-white mt-30">Submit Now</a></p>
                 </div>
             </div>
         </div>
@@ -94,29 +91,18 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading">About Me</h3>
+                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('about_heading')) the_field('about_heading'); ?></h3>
                 </div>
             </div>
             <div class="row mt-40">
                 <div class="col-md-5 mob-view">
-                    <img class="img-responsive mt-20" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/profile.png" alt="">
+                    <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
                 </div>
                 <div class="col-md-7">
-                    <p class="roboto-r color-gray font-16">After graduating from Loyola Marymount University, my primary goal was not to find a job, but to be an “investor.” I read a book called Rich Dad Poor Dad that really changed my thoughts on how I view money and life. After about 10 years of “investing” I had little direction, no advice or guidance as to what I wanted to accomplish.
-                        <br>
-                        <br>
-                        After doing odd jobs, I landed a position at Brown Van Remmen Kanuit. My original job description was a database project converting one database to another database. The project was to last about 1 or 2 years. Brown Van Remmen Kanuit was an Executive Search Firm, specializing in marketing and advertising. As I attended meetings with other recruiters, I gave suggestions on potential candidates based on my knowledge of the firm’s database. My role transitioned into a researcher which eventually transitioned into become a full fledge Executive Recruiter.
-                        <br>
-                        <br>
-                        I was very fortunate in being mentored by seasoned, professional recruiters. I learned how to evaluate resumes, personalities and opportunities. Recruiting has allowed me to bridge my personal talent of explaining things in easy, simple manners.
-                        <br>
-                        <br>
-                        Currently, I am an Executive Recruiter at a major automotive manufacturer. I work on a wide variety of positions ranging from administrative assistants to national marketing directors.
-
-                    </p>
+                    <p class="roboto-r color-gray font-16"><?php if(get_field('about_left_content')) the_field('about_left_content'); ?></p>
                 </div>
                 <div class="col-md-5 desk-view">
-                    <img class="img-responsive mt-20" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/profile.png" alt="">
+                    <img class="img-responsive mt-20" src="<?php if(get_field('about_right_content')) {$image2 = get_field('about_right_content'); echo $image2['url'];} ?>" alt="<?php echo $image2['alt']; ?>">
                 </div>
 
             </div>
@@ -128,53 +114,46 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="roboto-b color-main-black text-center secound-heading">Recent Posts </h3>
+                    <h3 class="roboto-b color-main-black text-center secound-heading"><?php if(get_field('r_heading')) the_field('r_heading'); ?></h3>
                 </div>
             </div>
             <div class="row mt-30">
-                <div class="col-md-4">
-                    <a href="">
-                        <div class="recent-post">
-                            <div class="img-container">
-                                <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/blog1.jpg" alt="">
-                            </div>
-                            <h3 class="post-headings roboto-m">Recent College Graduate Advice</h3>
-                            <p class="post-time-date roboto-r">FEB 13. - ADMIN NAME - 4 COMMENTS</p>
-                            <p class="post-content roboto-r">Lorem ipsum dolor sit amet, consectetur
-                                adiicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolor magna aliqua.</p>
+
+                <?php
+
+                $args = array(
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'posts_per_page'=>3,
+                    'order'=>'DESC',
+                    'orderby'=>'ID',
+                );
+
+                ?>
+
+                <?php $loop = new WP_Query($args); ?>
+
+                <?php if($loop->have_posts()){?>
+
+                    <?php while($loop->have_posts()) : $loop->the_post(); ?>
+                        <div class="col-md-4">
+                            <a href="<?php echo get_permalink(); ?>">
+                                <div class="recent-post">
+                                    <div class="img-container">
+                                        <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                    </div>
+                                    <h3 class="post-headings roboto-m"><?php $title = get_the_title();  echo $title ?></h3>
+                                    <p class="post-time-date roboto-r"><?php the_date('M.d');?>. - <?php the_author(); ?> - <?php comments_number(); ?></p>
+                                    <p class="post-content roboto-r"><?php the_excerpt(); ?></p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="">
-                        <div class="recent-post">
-                            <div class="img-container">
-                                <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/blog2.jpg" alt="">
-                            </div>
-                            <h3 class="post-headings roboto-m">High School to College Advice</h3>
-                            <p class="post-time-date roboto-r">FEB 13. - ADMIN NAME - 4 COMMENTS</p>
-                            <p class="post-content roboto-r">Lorem ipsum dolor sit amet, consectetur
-                                adiicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolor magna aliqua.</p>
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="">
-                        <div class="recent-post">
-                            <div class="img-container">
-                                <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/blog1.jpg" alt="">
-                            </div>
-                            <h3 class="post-headings roboto-m">Networking</h3>
-                            <p class="post-time-date roboto-r">FEB 13. - ADMIN NAME - 4 COMMENTS</p>
-                            <p class="post-content roboto-r">Lorem ipsum dolor sit amet, consectetur
-                                adiicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolor magna aliqua.</p>
-                        </div>
-                    </a>
-                </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_query(); ?>
+
+
+                <?php } ?>
+
             </div>
             <div class="row">
                 <div class="col-md-12">

@@ -199,10 +199,12 @@
 .post-headings{
     font-size: 18px;
     color: #292929;
+    margin-top: 15px;
 }
 .post-time-date{
     font-size: 12px;
     color: #7A7A7A;
+    text-transform: uppercase;
 }
 .post-content{
     color: #7A7A7A;
@@ -421,6 +423,33 @@
 }
 /***********************Contact Us page Ended*******************/
 
+/**********************submit contact form **************************/
+div.wpforms-container-full .wpforms-form input{
+    height: 60px!important;
+    border: 0px!important;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-label{
+    font-family: 'Roboto-r';
+}
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium{
+    border: 0px!important;
+}
+div.wpforms-container-full .wpforms-form button[type="submit"]{
+    display: block;
+    width: 100%;
+    color: #fff!important;
+    background-color: #17a2b8!important;
+    border-color: #17a2b8!important;
+    font-family: 'Roboto-cn-b';
+    font-size: 30px!important;
+    border-radius: 5px;
+    padding: 5px 0px!important;
+}
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+    color: #fff!important;
+    background-color: #138496!important;
+    border-color: #117a8b!important;
+}
 @media(max-width: 767px){
     
     .bg-banner {
