@@ -31,7 +31,7 @@ get_header();
                 </div>
                 <div class="col-md-6 col-sm-6 col-lg-6">
                     <p class="section-para color-gray roboto-r  mt-30"><?php if(get_field('left_content')) the_field('left_content'); ?></p>
-                    <p class="mt-20"><a href="" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
+                    <p class="mt-20"><a href="<?php site_url(); ?>/what-hiring-manager-look-for/" class="btn btn-read text-white roboto-r bg-blue">Read More</a></p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-6 desk-view">
                     <img class="img-fluid mt-30" src="<?php if(get_field('right_image')) {$image = get_field('right_image'); echo $image['url'];} ?>" alt="<?php echo $image['alt']; ?>">

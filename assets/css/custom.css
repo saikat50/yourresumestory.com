@@ -450,6 +450,35 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
     background-color: #138496!important;
     border-color: #117a8b!important;
 }
+#primary-menu ul .cat-item a{
+    font-size: 14px;
+}
+#primary-menu .dropdown{
+    width: 300px;
+}
+.h-manager-text{
+    color: #3a3a3a;
+    font-size: 18px;
+    font-family: 'Roboto-r';
+}
+.h-manager-text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #3a3a3a;
+}
+.h-manager-text strong{
+    font-weight: bold!important;
+}
+.h-manager-text ul{
+    margin-left: 40px!important;
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+}
+.h-manager-text ul li{
+    list-style: disc!important;
+    display: inline flow-root list-item!important;
+}
+
 @media(max-width: 767px){
     
     .bg-banner {

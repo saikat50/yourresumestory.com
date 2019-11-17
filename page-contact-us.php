@@ -5,11 +5,11 @@
 get_header();
 ?>
 
-<div class="banner pl-0 pr-0 bg-banner breadcum_banner" style="background: url('<?php bloginfo('stylesheet_directory'); ?>/assets/images/conatct-us.jpg')">
+<div class="banner pl-0 pr-0 bg-banner breadcum_banner" style="background: url('<?php if(get_field('banner_bg')) the_field('banner_bg'); ?>')">
 
         <div class="layer-content">
             <div class="heding-of-banner">
-                <h2 class="roboto-m breadcum-txt-head text-white">Contact Us</h2>
+                <h2 class="roboto-m breadcum-txt-head text-white"><?php if(get_field('banner_heading')) the_field('banner_heading'); ?></h2>
                 <p class="text-center"><a class="roboto-cn-r font-16 color-main-black" href="">Home</a> <span class="rotate-1" style="font-size: 10px">/</span> <span class="roboto-cn-r font-16 color-main-black">Contact Us</span></p>
             </div>
         </div>
@@ -21,8 +21,8 @@ get_header();
             <div class="container pl-50 pr-50">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Leave us your info</h2>
-                        <h3 class="color-gray">and we will get back to you</h3>
+                        <h2><?php if(get_field('form_heading')) the_field('form_heading'); ?></h2>
+                        <h3 class="color-gray"><?php if(get_field('form_sub_heading')) the_field('form_sub_heading'); ?></h3>
                     </div>
                 </div>
 
@@ -47,8 +47,7 @@ get_header();
         <div class="contact-info p-5">
             <div class="container">
                 <div class="row mt-70">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.5524931672107!2d-86.97300738482132!3d20.4835654862962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e574535ed580b%3A0x3755b1aa0c2c9783!2sBeach%20Bum%20Cozumel!5e0!3m2!1sen!2sbd!4v1572843465354!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
+                    <?php if(get_field('google_map_code')) the_field('google_map_code'); ?>
                 </div>
 
             </div>
