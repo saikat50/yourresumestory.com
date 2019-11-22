@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo3.png" alt="Your Resume Story"></a></div>
+                        <div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/finalogo.png" alt="Your Resume Story"></a></div>
                     </div>
                     <div class="col-sm-6 col-lg-9">
                         <nav id="primary-menu">
@@ -114,11 +114,13 @@
                                             <li><a href="<?php site_url(); ?>/home">Home</a></li>
                                             <li><a href="">Career Advice</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="">Example 1</a></li>
-                                                    <li><a href="">Example 2</a></li>
+                                                    <?php wp_list_categories( array(
+                                                        'exclude'  => array( 4,7 ),
+                                                        'title_li' => ''
+                                                    ) ); ?>
                                                 </ul>
                                             </li>
-                                            <li><a href="">About Me</a></li>
+                                            <li><a href="<?php site_url(); ?>/about-me">About Me</a></li>
                                             <li><a href="<?php site_url(); ?>/blog">Blog</a></li>
                                             <li><a href="<?php site_url(); ?>/contact-us">Contact us</a></li>
                                         </ul>

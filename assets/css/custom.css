@@ -122,7 +122,9 @@
 
 
 .logo img{
-    width: 100px;
+    width: 214px;
+    padding-top: 10px;
+
 }
 .logo{
     padding: 0;
@@ -519,7 +521,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
         position: relative;
     }
     .breadcum-txt-head {
-        font-size: 42px;
+        font-size: 38px;
     }
     .contact-us h2 {
         font-family: 'Roboto-b';

@@ -302,7 +302,7 @@ ul.dropdown > li:hover > ul.inside-menu {
 .sticky .logo img {
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	width: 92px;
+    width: 200px;
 }
 .sticky .logo {padding: 0px 0;}
 .sticky .login-btn {

@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="text-center text-white">LOGO</p>
+                            <p class="text-center text-white"><div class="logo"><a href="<?php site_url(); ?>/home"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/finalogo.png" alt="Your Resume Story"></a></div></p>
                         </div>
                         <div class="col-md-4">
                             <h3 class="f-menu-title mont-b mt-10">Menu</h3>
