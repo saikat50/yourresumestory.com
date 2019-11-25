@@ -62,7 +62,7 @@
 
     <!-- Modernizr JS -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+    <script data-ad-client="ca-pub-6334265496452655" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
 </head>
 

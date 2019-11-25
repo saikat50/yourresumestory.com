@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad51657d-aadd-49ce-a2a2-162f056d5e73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/shortcode/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/shortcode/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../alam/wp-content/themes/tcftheme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -58,7 +55,9 @@
       <workItem from="1573966457161" duration="2057000" />
       <workItem from="1574012278075" duration="8294000" />
       <workItem from="1574182503254" duration="18000" />
-      <workItem from="1574445791446" duration="2193000" />
+      <workItem from="1574445791446" duration="3277000" />
+      <workItem from="1574607880416" duration="1358000" />
+      <workItem from="1574697319513" duration="28000" />
     </task>
     <servers />
   </component>
